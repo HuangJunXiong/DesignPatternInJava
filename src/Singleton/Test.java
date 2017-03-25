@@ -33,11 +33,11 @@ public class Test {
         latch.countDown();
         // 反射攻击
 //        attack();
-        attack1();
+//        attackModify();
     }
 
     // 反射攻击测试 饿汉单例为例
-    public static void attack1(){
+    public static void attackModify(){
         Class<?> cls = SingletonNotAttackByReflect.class;
         try {
             Constructor<?> declaredConstructor = cls.getDeclaredConstructor(null); // 无参构造函数
@@ -57,6 +57,7 @@ public class Test {
         }
     }
 
+    // 反射攻击测试 饿汉单例为例
     public static void attack(){
         Class<?> cls = ImprovedSingleton.class;
         try {
