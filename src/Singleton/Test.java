@@ -4,8 +4,6 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.CountDownLatch;
 
-import static sun.misc.PostVMInitHook.run;
-
 /**
  * Created by gray on 2017/3/25.
  */
@@ -23,6 +21,7 @@ public class Test {
 //                        System.out.println(ClassicSingleton.getInstance().hashCode());　// 传统单例模式测试 懒汉
 //                        System.out.println(ImprovedSingleton.getInstance().hashCode()); // 改进加锁单例模式测试 饿汉
 //                        System.out.println(DoubleCheckedLockingSingleton.getInstance().hashCode()); // 双重检查加锁单例模式测试
+//                        System.out.println(StaticInnerClassSingleton.getInstance().hashCode()); // 静态内部类单例模式测试
 //                        System.out.println(SingletonByEnum.getInstance().hashCode()); // 枚举单例模式测试
                     } catch (InterruptedException e) {
                         e.printStackTrace();
