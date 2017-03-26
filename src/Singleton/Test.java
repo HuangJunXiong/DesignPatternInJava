@@ -35,7 +35,7 @@ public class Test {
 //        attackModify();
     }
 
-    // 反射攻击测试 饿汉单例为例
+    // 反射攻击测试
     public static void attackModify(){
         Class<?> cls = SingletonNotAttackByReflect.class;
         try {
