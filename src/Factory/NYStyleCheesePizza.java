@@ -6,6 +6,6 @@ package Factory;
 public class NYStyleCheesePizza extends CheesePizza  {
     @Override
     public String toString() {
-        return super.toString()+" by NY";
+        return super.toString()+" of NY";
     }
 }
