@@ -11,14 +11,7 @@ public class CheesePizza extends Pizza {
 
     void prepare() {
         System.out.println("Preparing "+name+"的披萨中...");
-        location = factory.getLocation();
         material = factory.getMaterial();
         practice = factory.getPractice();
-    }
-
-    @Override
-    public String toString() {
-        return "[name:"+super.getName()+";location:"+location+";material:"+material
-                +";practice:"+practice+"]";
     }
 }

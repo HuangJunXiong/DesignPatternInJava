@@ -14,8 +14,4 @@ public class NYPizzaFactory implements PizzaFactory {
         return "纽约的做法";
     }
 
-    @Override
-    public String getLocation() {
-        return "纽约";
-    }
 }

@@ -5,7 +5,6 @@ package Factory.Abstract;
  */
 public abstract class Pizza {
     String name; // 名称
-    String location; //地区
     String material; // 材料
     String practice; // 做法
     abstract void prepare();
@@ -20,6 +19,7 @@ public abstract class Pizza {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "[name:"+name+";material:"+material
+                +";practice:"+practice+"]";
     }
 }

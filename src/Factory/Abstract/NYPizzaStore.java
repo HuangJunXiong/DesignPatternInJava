@@ -10,7 +10,7 @@ public class NYPizzaStore extends PizzaStore {
         PizzaFactory factory = new NYPizzaFactory();
         if ("cheese".equals(type)) {
             pizza = new CheesePizza(factory);
-            pizza.setName("纽约");
+            pizza.setName("纽约口味的披萨");
         }
         return pizza;
     }

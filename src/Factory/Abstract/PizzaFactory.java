@@ -6,5 +6,4 @@ package Factory.Abstract;
 public interface PizzaFactory {
     public String getMaterial();
     public String getPractice();
-    public String getLocation();
 }
