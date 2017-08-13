@@ -11,5 +11,11 @@ public class Test {
         n.updateContext(str1);
         String str2 = "今天是8月2号,发生了XXXX事情...";
         n.updateContext(str2);
+        String str3 = "今天是8月3号,发生了XXXXXXX事情...";
+        n.removeObserver(s); //取消订阅
+        n.updateContext(str3);
+        String str4 = "今天是8月4号,发生了xxxxxx事情...";
+        n.registerObserver(s); //订阅
+        n.updateContext(str4);
     }
 }
