@@ -10,7 +10,7 @@ public class Newspaper2 extends Observable {
     public Newspaper2(){}
     public void updateContext(String context){
         this.context = context;
-        setChanged();
+        setChanged(); // 通知前调用指示状态发生了改变
         notifyObservers();
     }
 
